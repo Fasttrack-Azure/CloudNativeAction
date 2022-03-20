@@ -7,4 +7,4 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = CloudNativeAction
-build_property.ProjectDir = c:\cloud-native-demos\CloudNativeAction\CloudNativeAction\
+build_property.ProjectDir = c:\Trainings\BCG\Demos\GitHubActions\CloudNativeAction\

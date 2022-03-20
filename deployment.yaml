@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: myapp
-        image: cloudnativeacr01.azurecr.io/cloudnativeaction:latest
+        image: bcglabacr01.azurecr.io/cloudnativeaction:latest
         resources:
           limits:
             memory: "128Mi"

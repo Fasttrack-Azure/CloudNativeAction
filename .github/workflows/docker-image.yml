@@ -15,20 +15,20 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag cloudnativeacr01.azurecr.io/cloudnativeaction:latest
+      run: docker build . --file Dockerfile --tag bcglabacr01.azurecr.io/cloudnativeaction:latest
      
     - name: Azure Container Registry Login
       uses: Azure/docker-login@v1
       with:
         # Container registry username
-        username: cloudnativeacr01
+        username: bcglabacr01
         # Container registry password
         password: ${{ secrets.ACR_CREDENTIALS }} 
         # Container registry server url
-        login-server: cloudnativeacr01.azurecr.io
+        login-server: bcglabacr01.azurecr.io
         
     - name: Push Image  
-      run: docker push cloudnativeacr01.azurecr.io/cloudnativeaction:latest
+      run: docker push bcglabacr01.azurecr.io/cloudnativeaction:latest
       
   deploy:
     runs-on: ubuntu-latest

@@ -48,10 +48,10 @@ jobs:
     - name: Kubernetes set context
       uses: Azure/k8s-set-context@v1
       with:
-        kubeconfig: ${{secrets.KUBECONFIG}}  
+        kubeconfig: ${{secrets.KUBECONFIG}}
       id: login
         
-     #Declarative Deployment   
+     #Declarative Deployment-01
     - name: Kubernetes Deployment
       run: kubectl apply -f deployment.yaml
     - name: Service Deployment

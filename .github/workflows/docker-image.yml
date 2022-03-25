@@ -51,7 +51,7 @@ jobs:
         kubeconfig: ${{secrets.KUBECONFIG}}
       id: login
         
-     #Declarative Deployment-01
+     #Declarative Deployment-02
     - name: Kubernetes Deployment
       run: kubectl apply -f deployment.yaml
     - name: Service Deployment
